@@ -5,6 +5,7 @@ import avatar from './avatar.webp';
 
 function Card({title,imageurl,body}) {
     return (
+      <div className="container">
       <div className="card-container">
       <div className="image-container">
       <img src={imageurl}  alt=""/>
@@ -20,6 +21,7 @@ function Card({title,imageurl,body}) {
          <img src={avatar}  alt=""/>
          <h4>Greg hooper</h4>
         </div>
+      </div>
       </div>
       </div>
 

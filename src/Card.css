@@ -2,6 +2,8 @@
     background-color: rgb(255, 225, 0);
 }
 
+
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
     cursor: pointer;
     overflow: hidden;
     position: absolute;
-    left: 30%;
+    left: 35%;
     top: 20%;
     transition: 0.5s;
     animation: ease-in-out;
@@ -27,6 +29,7 @@
 
 
   .image-container {
+    background: none;
    overflow: hidden;
    height: 200px;
    margin: 15px 15px 15px 15px;
@@ -82,13 +85,19 @@ h4 {
 
 @media screen and (max-width:769px) {
     .card-container {
-        display: block;
+        display: flex;
         justify-content: center;
-        top: 13%;
+        top: 70px;
+        left: 210px;
     
     }
 }
 
-@media screen and (max-width:769px) {
-    
+@media screen and (max-width:425px) {
+    .card-container{
+        display: flex;
+        justify-content: center ;
+        left:50px;
+        top: 70px;
+    }
 }
